@@ -1,0 +1,16 @@
+def sum_of_distinct_elements(set1, set2):
+    merged_array = set1 + set2
+    distinct_array = []
+
+    for element in merged_array:
+        if element not in distinct_array:
+            distinct_array.append(element)
+
+    sum_of_elements = sum(distinct_array)
+
+    return sum_of_elements
+
+set1 = [3, 1, 7, 9]
+set2 = [2, 4, 1, 9, 3]
+
+print(sum_of_distinct_elements(set1, set2))
